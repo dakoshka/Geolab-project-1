@@ -1,0 +1,305 @@
+.w3-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.w3-display-container:hover .w3-display-hover {
+    display: block
+}
+
+.w3-display-container:hover span.w3-display-hover {
+    display: inline-block
+}
+
+.w3-button:hover {
+    color: #000!important;
+    background-color: #ccc!important
+}
+
+.w3-button-left {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 4% 1%;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: darkred;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+
+}
+
+
+.w3-button-right {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 4% 1%;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: darkred;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.arrow-left {
+width: 30px;
+}
+
+.arrow-right{
+	width: 30px;
+	transform: rotate(180deg);
+}
+
+
+.w3-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%)
+}
+
+.w3-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(0%,-50%)
+}
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 25%;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+	top: -40px;
+    right: -5px;
+    font-size: 60px;
+    color: red;
+}
+
+.services-header {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'robotoregular'sans-serif;
+	letter-spacing: 7px;
+	margin: 0 0 50px 0;
+
+}
+
+.box-header {
+	text-align: center;
+	margin-bottom: 50px;
+	font-family: 'robotoregular' sans-serif; 
+	text-transform: uppercase;
+	letter-spacing: 7px;
+}
+
+.services-box {
+	background-color: #EBE8DE;
+	margin-right: 2.33%;
+	/*height: 395px;*/
+}
+
+.repair {
+	margin-right: 0;
+}
+
+.modify {
+	margin-left: 5%;
+}
+
+.col-width {
+	max-width: 28%!important;
+
+}
+
+.services-img{
+	width: 50%;
+	display: block;
+	margin:auto;
+	padding: 25px 0 25px 0;
+}
+
+.bus-background {
+	width: 100%;
+	position: relative;
+}
+
+/*.bus-img{
+	width: 25%;
+
+}*/
+
+
+
+#googlemaps { 
+ /* height: 90%;*/ 
+ height: 570px;
+  width: 80%; 
+  position:absolute; 
+  top: 0; 
+  left: 10%; 
+  z-index: 0; 
+
+
+}
+
+
+.adress-left {
+	background-color: #EBE8DE;
+
+}
+
+.radio {
+	float: left;
+	background-color: #FFFFFF;
+	padding-top: 80px;
+    
+}
+
+.radio-txt {
+    vertical-align: text-bottom;
+    word-spacing: 30px;
+}
+.chackbox-txt{
+    margin-left: 10px;
+
+}
+
+
+
+#contact-form input[type=text], textarea {
+    width: 70%;
+    padding: 10px 10px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 0px;
+    box-sizing: border-box;
+	background-color: #F2F2F2;
+	color: #4D4D4D;
+	font-size: 15px;
+    margin-left: 20px;
+
+}
+
+.contact-form{
+    padding-top: 245px;
+}
+
+#message-txt {
+	 resize: none;
+}
+
+.adress-right{
+	background-color: #FFFFFF;
+}
+
+
+.checkbox-header{
+	margin-top: 85px;
+    margin-bottom: 15px;
+
+}
+
+.contact-info {
+    margin-left: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'robotoregular' sans-serif;
+}
+
+.contact-info2 {
+    margin-top: 135px;
+    text-align: center;
+    font-family: 'robotoregular' sans-serif;
+}
+
+.contact-header {
+    font-family: 'robotoregular' sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#submitBtn {
+    background: black;
+    color: white;
+    float: right;
+    margin-right: 25px;
+}
+
+.social-icon {
+    width: 20%;
+    text-align: center;
+}
+
+.social-img {
+    text-align: center;
+}
+
+.footer-txt {
+    line-height: 3;
+}
+
+.footer-txt2 {
+    float: right;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
