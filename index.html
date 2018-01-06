@@ -22,17 +22,22 @@
   </div>
 </div>
 
+
+<div class="w3-content w3-display-container">
 <span style="font-size:30px;
 			 cursor:pointer;   
-		 	 position: absolute;
+		 	 position: fixed;
 		     right: 10px;
-		     color: white;" 
+		     color: red;
+		     z-index: 1" 
     onclick="openNav()" id="burgerIcon">&#9776;</span>
-	<div class="w3-content w3-display-container">
+<div id="home" style="position: relative;">
 
-<div id=home>
+<img class="logo-img" id="logoWhite" src="images/logo-white.svg"> 
+<img class="logo-img" id="logoRed" src="images/logo-red.svg" style="display: none; z-index: 1">
+
 	<div class="w3-display-container mySlides">
-	  <img src="images/car.png" style="width:100%">
+	  <img src="images/car.png" style="width:100%;">
 	</div>
 
 	<div class="w3-display-container mySlides">
@@ -42,14 +47,11 @@
 	<div class="w3-display-container mySlides">
 	  <img src="images/car.png" style="width:100%">
 	</div>
-
-	<div class="w3-display-container mySlides">
-	  <img src="images/tree.jpg" style="width:100%">
-	</div>
-
-	<div class="w3-button-left w3-display-left w3-black" onclick="plusDivs(-1)"> <img class="arrow-left" src="images/arrow.svg"></div>
-	<div class="w3-button-right w3-display-right w3-black" onclick="plusDivs(1)"> <img class="arrow-right" src="images/arrow.svg"> </div>
+<div class="w3-button-left w3-display-left w3-black" onclick="plusDivs(-1)"><img class="arrow-left" src="images/arrow.svg"></div>
+<div class="w3-button-right w3-display-right w3-black" onclick="plusDivs(1)"><img class="arrow-right" src="images/arrow.svg"> </div>
 </div>
+
+
 
 <div id="services">
 	<div class="container">
@@ -90,79 +92,65 @@
 
 
 
+
+
 <div id="contact" style="position: relative;"> 
 
-	  <div id="googlemaps"> </div>
+	                <div id="googlemaps"> </div>
 
 
- <div class="container contact-form">
-	<div class="row">
+    <div class="container contact-form">
+	    <div class="row">
 
-		<div class="col-md-1"> </div>
+		          <div class="col-md-1"> </div>
 
-<div class="col-md-3  adress-left">
-	<h2 class="contact-info"> contact information  </h2>
-	<h2 class="contact-info2"> click to </br> view </h2>
+                       <div class="col-md-3  adress-left"> 
+	                        <h2 class="contact-info"> contact information  </h2>
+	                        <h2 class="contact-info2"> click to </br> view </h2>
 
-    <div class="social-img">
-    <a href="https://plus.google.com"> <img class="social-icon" src="images/google.svg"> </a>
-    <a href="https://facebook.com"> <img class="social-icon" src="images/fb.svg"> </a>
-	<a href="https://twitter.com"> <img class="social-icon" src="images/twitter.svg"> </a>
-</div>
-    </div>
-
-
+						    <div class="social-img">
+						     <a href="https://plus.google.com"> <img class="social-icon" src="images/google.svg"> </a>
+						     <a href="https://facebook.com"> <img class="social-icon" src="images/fb.svg"> </a>
+							 <a href="https://twitter.com"> <img class="social-icon" src="images/twitter.svg"> </a>
+						   </div>
+                       </div>
 
 
-<div class="col-md-4 adress-right">
+             <div class="col-md-4 adress-right">
 
-   	<h2 class="contact-header"> get in touch </h2>
+   	             <h2 class="contact-header"> get in touch </h2>
            
-         <form id="contact-form">
-                         
-                          <input type="text" id="name-txt" name="name-txt" placeholder="name">
-      
-                          
-                          <input type="text" id="email-txt" name="email-txt" placeholder="email">
-      
-                          
-                          <input type="text" id="subject-txt" name="subject-txt" placeholder="subject">
-      
-                         
-                          <textarea id="message-txt" name="message-txt" placeholder="text" rows="3"></textarea>
-                        
-                         
-                        </form>  
-
-        </div>
+                      <form id="contact-form">
+                          <input type="text" id="name-txt" name="name-txt" placeholder="name" required>
+                          <input type="email" id="email-txt" name="email-txt" placeholder="email" required>
+                          <input type="text" id="subject-txt" name="subject-txt" placeholder="subject" required>
+                          <textarea id="message-txt" name="message-txt" placeholder="text" rows="3" required></textarea>
+                </div>
 
 
              <div class="col-md-3 radio">
-                  <form action="#">
-				     <input type="radio" name="gender" value="male" checked> <span class="radio-txt"> Male </span>
-				     <input type="radio" name="gender" value="female"> <span class="radio-txt"> Female </span>
-				</form> 
+		             
+						     <input type="radio" name="gender" value="male" checked> <span class="radio-txt"> Male </span>
+						     <input type="radio" name="gender" value="female"> <span class="radio-txt"> Female </span>
 
+			            <div class="checkbox-header"> sign up for newsletter: </div>
+				
+						  <input type="checkbox" name="vehicle" value="image"> <span class="chackbox-txt"> recive images <br> </span>
+						  <input type="checkbox" name="vehicle" value="promotion"> <span class="chackbox-txt"> recive promotions <br> </span>
+						  <input type="checkbox" name="vehicle" value="update"> <span class="chackbox-txt"> recive updates <br> </span>
+						  <input type="checkbox" name="vehicle" value="job"> <span class="chackbox-txt"> recive job offers <br> </span>
+			              <input type="submit" id="submitBtn" value="send">
+					
 
-            <div class="checkbox-header"> sign up for newsletter: </div>
-			<form action="#">
-			  <input type="checkbox" name="vehicle" value="image"> <span class="chackbox-txt"> recive images <br> </span>
-			  <input type="checkbox" name="vehicle" value="promotion"> <span class="chackbox-txt"> recive promotions <br> </span>
-			  <input type="checkbox" name="vehicle" value="update"> <span class="chackbox-txt"> recive updates <br> </span>
-			  <input type="checkbox" name="vehicle" value="job"> <span class="chackbox-txt"> recive job offers <br> </span>
-              <input type="submit" id="submitBtn" onclick="submitClicked()" value="send">
-
-			</form>
-
-			</div>
-
+			   </div>
+	</form>
            <div class="col-md-1"> </div>
 
-    </div>
 </div>
+   </div>
+      </div>
 
-</div>
-</div>
+
 	
 
 

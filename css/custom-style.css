@@ -64,7 +64,7 @@ width: 30px;
 
 .w3-display-left {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 0%;
     transform: translate(0%,-50%);
     -ms-transform: translate(-0%,-50%)
@@ -72,7 +72,7 @@ width: 30px;
 
 .w3-display-right {
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 0%;
     transform: translate(0%,-50%);
     -ms-transform: translate(0%,-50%)
@@ -189,6 +189,16 @@ width: 30px;
 
 }
 
+.logo-img {
+    width: 20%;
+     position: absolute;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
 
 .adress-left {
 	background-color: #EBE8DE;
@@ -213,7 +223,7 @@ width: 30px;
 
 
 
-#contact-form input[type=text], textarea {
+#contact-form input[type=text], input[type=email], textarea {
     width: 70%;
     padding: 10px 10px;
     margin: 6px 0;
@@ -282,6 +292,7 @@ width: 30px;
 
 .social-img {
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .footer-txt {
@@ -292,6 +303,7 @@ width: 30px;
     float: right;
 }
 
+
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px}
@@ -301,5 +313,4 @@ width: 30px;
     right: 35px;
   }
 }
-
 

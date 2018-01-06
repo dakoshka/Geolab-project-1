@@ -20,12 +20,13 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 
-
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
    $('#burgerIcon').hide();
    $('#navClose').show();
    $('.w3-black').hide();
+   $('#logoWhite').hide();
+   $('#logoRed').show();
 
 }
 
@@ -34,7 +35,8 @@ function closeNav() {
    $('#navClose').hide();
    $('#burgerIcon').show();
    $('.w3-black').show();
-
+   $('#logoWhite').show();
+   $('#logoRed').hide();
 }
 
 
