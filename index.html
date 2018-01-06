@@ -1,224 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title> </title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Auto </title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
-	<link rel="stylesheet" type="text/css" href="css/custom-style.css">
-	 
+	<link rel="stylesheet" type="text/css" href="css/custom-style.css">	 
 </head>
 <body>
 
 
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="navClose">&times;</a>
-  <div class="overlay-content">
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </div>
+   <div class="overlay-content">
+	    <a href="#home">Home</a>
+	    <a href="#services">Services</a>
+	    <a href="#contact">Contact</a>
+   </div>
 </div>
 
 
-<div class="w3-content w3-display-container">
-<span style="font-size:30px;
+<div class="button-content display-container"> </div>
+   <span style="font-size:30px;
 			 cursor:pointer;   
 		 	 position: fixed;
 		     right: 10px;
 		     color: red;
 		     z-index: 1" 
-    onclick="openNav()" id="burgerIcon">&#9776;</span>
+         onclick="openNav()" id="burgerIcon">&#9776;
+   </span>
+
 <div id="home" style="position: relative;">
 
-<img class="logo-img" id="logoWhite" src="images/logo-white.svg"> 
-<img class="logo-img" id="logoRed" src="images/logo-red.svg" style="display: none; z-index: 1">
+		<img class="logo-img" id="logoWhite" src="images/logo-white.svg" alt="logo-white"> 
+		<img class="logo-img" id="logoRed" src="images/logo-red.svg" alt="logo-red" style="display: none; z-index: 1">
 
-	<div class="w3-display-container mySlides">
-	  <img src="images/car.png" style="width:100%;">
-	</div>
+	 <div class="display-container mySlides">
+	    <img src="images/car.png" alt="car" style="width:100%;">
+	 </div>
 
-	<div class="w3-display-container mySlides">
-	  <img src="images/tree.jpg" style="width:100%">
-	</div>
+	 <div class="display-container mySlides">
+	    <img src="images/tree.jpg" alt="tree" style="width:100%">
+	 </div>
 
-	<div class="w3-display-container mySlides">
-	  <img src="images/car.png" style="width:100%">
-	</div>
-<div class="w3-button-left w3-display-left w3-black" onclick="plusDivs(-1)"><img class="arrow-left" src="images/arrow.svg"></div>
-<div class="w3-button-right w3-display-right w3-black" onclick="plusDivs(1)"><img class="arrow-right" src="images/arrow.svg"> </div>
+	 <div class="display-container mySlides">
+	    <img src="images/car.png" alt="car" style="width:100%">
+	 </div>
+	<div class="button-left display-left" onclick="plusDivs(-1)"><img class="arrow-left" src="images/arrow.svg" alt="arrow"></div>
+	<div class="button-right display-right" onclick="plusDivs(1)"><img class="arrow-right" src="images/arrow.svg" alt="arrow"> </div>
+
 </div>
 
 
 
 <div id="services">
-	<div class="container">
-		<h1 class="services-header col-12"> 
+	 <div class="container">
+		 <h1 class="services-header col-12"> 
 			the corner garage for collector cars
-		</h1>
+		 </h1>
 
 		<div class="row">
 			<div class=" services-box col-width modify col-md-4">
-				<a href="#"><img class="services-img" src="images/modify.svg"> </a>
+				<a href="#"><img class="services-img" src="images/modify.svg" alt="modify"> </a>
 				<h1 class="box-header">  modify </h1>
-				
-
 			</div>
 			
-		<div class=" services-box col-width col-md-4">
-			<a href="#"> <img class="services-img" src="images/buy.svg"> </a>
+		    <div class=" services-box col-width col-md-4">
+			    <a href="#"> <img class="services-img" src="images/buy.svg" alt="buy"> </a>
 				<h1 class="box-header">  buy </h1>
-				
-
 			</div>
 
-		<div class="services-box repair col-width col-md-4">
-			<a href="#"> <img class="services-img" src="images/repair.svg"> </a>
+		     <div class="services-box repair col-width col-md-4">
+			    <a href="#"> <img class="services-img" src="images/repair.svg" alt="repair"> </a>
 				<h1 class="box-header">  repair </h1>
 			</div>
 
 		</div>
 		
-	</div>
+	 </div>
 
-	<div class="container-fluid">
-		<img class="bus-background" src="images/background-bus.svg">
-		<!-- <img class="bus-img" src="images/bus.png"> -->
+	     <div class="container-fluid">
+		    <img class="bus-background" src="images/background-bus.svg" alt="background-bus">
+         </div>
 </div>
-</div>
-
-
-
-
 
 
 <div id="contact" style="position: relative;"> 
 
-	                <div id="googlemaps"> </div>
+    <div id="googlemaps"> </div>
 
-
-    <div class="container contact-form">
+     <div class="container contact-form">
 	    <div class="row">
 
 		          <div class="col-md-1"> </div>
 
-                       <div class="col-md-3  adress-left"> 
+                       <div class="col-md-3 adress-left"> 
 	                        <h2 class="contact-info"> contact information  </h2>
-	                        <h2 class="contact-info2"> click to </br> view </h2>
+	                        <h2 class="contact-info2"> click to <br/> view </h2>
 
 						    <div class="social-img">
-						     <a href="https://plus.google.com"> <img class="social-icon" src="images/google.svg"> </a>
-						     <a href="https://facebook.com"> <img class="social-icon" src="images/fb.svg"> </a>
-							 <a href="https://twitter.com"> <img class="social-icon" src="images/twitter.svg"> </a>
+						     <a href="https://plus.google.com"> <img class="social-icon" src="images/google.svg" alt="google"> </a>
+						     <a href="https://facebook.com"> <img class="social-icon" src="images/fb.svg" alt="facebook"> </a>
+							 <a href="https://twitter.com"> <img class="social-icon" src="images/twitter.svg" alt="twitter"> </a>
 						   </div>
                        </div>
 
 
-             <div class="col-md-4 adress-right">
+                       <div class="col-md-4 adress-right">
 
-   	             <h2 class="contact-header"> get in touch </h2>
+   	                     <h2 class="contact-header"> get in touch </h2>
            
-                      <form id="contact-form">
+                      <form id="contact-form"> 
                           <input type="text" id="name-txt" name="name-txt" placeholder="name" required>
+                          <div style="display: none;" class="validation-msg"> please write your name </div>
                           <input type="email" id="email-txt" name="email-txt" placeholder="email" required>
+                          <div style="display: none;" class="validation-msg"> please write your email </div>
                           <input type="text" id="subject-txt" name="subject-txt" placeholder="subject" required>
+                          <div style="display: none;" class="validation-msg"> please write your subject </div>
                           <textarea id="message-txt" name="message-txt" placeholder="text" rows="3" required></textarea>
-                </div>
+                          <div style="display: none;" class="validation-msg"> please write text </div>
+                       </div>
 
+                          <div class="col-md-3 radio">
+						      <input type="radio" name="gender" value="male"> <span class="radio-txt"> Male </span>
+						      <input type="radio" name="gender" value="female"> <span class="radio-txt"> Female </span>
+						      <div style="display: none;" class="validation-msg-gender"> please choose your gender </div>
+				              <div class="checkbox-header"> sign up for newsletter: </div>
+							  <input type="checkbox" name="vehicle" value="image"> <span class="chackbox-txt"> recive images <br> </span>
+							  <input type="checkbox" name="vehicle" value="promotion"> <span class="chackbox-txt"> recive promotions <br> </span>
+							  <input type="checkbox" name="vehicle" value="update"> <span class="chackbox-txt"> recive updates <br> </span>
+							  <input type="checkbox" name="vehicle" value="job"> <span class="chackbox-txt"> recive job offers <br> </span>
 
-             <div class="col-md-3 radio">
-		             
-						     <input type="radio" name="gender" value="male" checked> <span class="radio-txt"> Male </span>
-						     <input type="radio" name="gender" value="female"> <span class="radio-txt"> Female </span>
+				              <input type="submit" id="submitBtn" value="send">
 
-			            <div class="checkbox-header"> sign up for newsletter: </div>
-				
-						  <input type="checkbox" name="vehicle" value="image"> <span class="chackbox-txt"> recive images <br> </span>
-						  <input type="checkbox" name="vehicle" value="promotion"> <span class="chackbox-txt"> recive promotions <br> </span>
-						  <input type="checkbox" name="vehicle" value="update"> <span class="chackbox-txt"> recive updates <br> </span>
-						  <input type="checkbox" name="vehicle" value="job"> <span class="chackbox-txt"> recive job offers <br> </span>
-			              <input type="submit" id="submitBtn" value="send">
-					
-
-			   </div>
-	</form>
-           <div class="col-md-1"> </div>
+			              </div>
+			              <div style="display: none;" class="validation-msg-radio"> Thank you for your intereset for us, your message has been sent! </div>
+	                   </form>
+                               <div class="col-md-1"> </div>
 
 </div>
    </div>
       </div>
 
 
-	
-
-
-
-
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmoBnSQuXV6ItsLfXAwPzCQQc16422n8c&sensor=false"></script>
-
-<script type="text/javascript">
-
-// The latitude and longitude of your business / place
-var position = [41.717578, 44.7828302];
-
-function showGoogleMaps() {
-
-    var latLng = new google.maps.LatLng(position[0], position[1]);
-
-    var mapOptions = {
-        zoom: 16, // initialize zoom level - the max value is 21
-        streetViewControl: false, // hide the yellow Street View pegman
-        scaleControl: true, // allow users to zoom the Google Map
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        center: latLng
-    };
-
-    map = new google.maps.Map(document.getElementById('googlemaps'),
-        mapOptions);
-
-    // Show the default red marker at the location
-    marker = new google.maps.Marker({
-        position: latLng,
-        map: map,
-        draggable: false,
-        animation: google.maps.Animation.DROP
-    });
-}
-
-google.maps.event.addDomListener(window, 'load', showGoogleMaps);
-</script>
-
-</div>
-
-
-
-
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="js/custom-js.js"></script>
-
 
 
 <footer>
-<div class="container footer-txt"> 
+  <div class="container footer-txt"> 
     <div class="row">
 	  <div class="col-md-1 col-sm-1"> </div>
-        <div class="col-md-5 col-sm-5"> <span class="footer-txt1"> © copyright 2017 </span> </div>
+        <div class="col-md-5 col-sm-5"> <span class="footer-txt1"> © copyright 2018 </span> </div>
           <div class="col-md-5 col-sm-5"> <span class="footer-txt2" > created by: Dako Siadmonidze </span> </div>
           <div class="col-md-1 col-sm-1"> </div>
-   </div>
-</div>
-	
-
+    </div>
+  </div>	
 </footer>
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmoBnSQuXV6ItsLfXAwPzCQQc16422n8c&sensor=false"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/custom-js.js"></script>
 
 </body>
 </html>

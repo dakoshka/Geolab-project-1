@@ -1,22 +1,22 @@
-.w3-content {
+.button-content {
     max-width: 100%;
     margin: 0 auto;
 }
 
-.w3-display-container:hover .w3-display-hover {
+.display-container:hover .display-hover {
     display: block
 }
 
-.w3-display-container:hover span.w3-display-hover {
+.display-container:hover span.display-hover {
     display: inline-block
 }
 
-.w3-button:hover {
+.button:hover {
     color: #000!important;
     background-color: #ccc!important
 }
 
-.w3-button-left {
+.button-left {
     border: none;
     display: inline-block;
     outline: 0;
@@ -35,7 +35,7 @@
 }
 
 
-.w3-button-right {
+.button-right {
     border: none;
     display: inline-block;
     outline: 0;
@@ -62,7 +62,7 @@ width: 30px;
 }
 
 
-.w3-display-left {
+.display-left {
     position: absolute;
     top: 40%;
     left: 0%;
@@ -70,7 +70,7 @@ width: 30px;
     -ms-transform: translate(-0%,-50%)
 }
 
-.w3-display-right {
+.display-right {
     position: absolute;
     top: 40%;
     right: 0%;
@@ -283,6 +283,7 @@ width: 30px;
     color: white;
     float: right;
     margin-right: 25px;
+    margin-top: 30px;
 }
 
 .social-icon {
@@ -303,6 +304,21 @@ width: 30px;
     float: right;
 }
 
+.validation-msg {
+    margin-left: 23px;
+    font-size: 12px;
+    color: red;
+}
+
+.validation-msg-radio {
+    font-size: 12px;
+    color: green;
+}
+
+.validation-msg-gender {
+    font-size: 12px;
+    color: red;
+}
 
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
