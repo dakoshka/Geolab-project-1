@@ -415,6 +415,10 @@ width: 80%;
     display: none;
 }
 
+.txt-date {
+    font-size: 20px;
+}
+
 }
 
 @media screen and (min-width: 1400px) {
