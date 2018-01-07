@@ -53,8 +53,8 @@
     overflow: hidden;
     text-decoration: none;
     color: darkred;
-    border-top-left-radius: 70px;
-    border-bottom-left-radius: 70px;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
     background-color: white;
     text-align: center;
     cursor: pointer;
