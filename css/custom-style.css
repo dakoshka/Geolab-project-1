@@ -36,8 +36,8 @@
     overflow: hidden;
     text-decoration: none;
     color: darkred;
-    border-top-right-radius: 70px;
-    border-bottom-right-radius: 70px;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
     background-color: white;
     text-align: center;
     cursor: pointer;
@@ -244,6 +244,7 @@ width: 40px;
     position: absolute;
     width: 100%;
     z-index: 2;
+    animation:myfirst 10s  linear infinite;
    -moz-animation:myfirst 10s  linear infinite;
   -webkit-animation:myfirst 10s  linear infinite;
 }
@@ -257,7 +258,11 @@ width: 40px;
     0%   {right:-25%;}
     100% {right:100%;}
 } 
-}
+@keyframes myfirst
+{
+    0%   {right:-25%;}
+    100% {right:100%;}
+} 
 
 .radio-txt {
  
@@ -404,6 +409,15 @@ width: 40px;
 }
 .line-horizontal{
     display: block!important;
+}
+
+}
+
+@media screen and (min-width: 1400px) {
+        height: 400px;
+    }
+.bus img{
+    width: 590px!important;
 }
 
 }
