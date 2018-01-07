@@ -16,6 +16,17 @@
     background-color: #ccc!important
 }
 
+
+
+#burgerIcon {
+    width: 75px;
+    position: fixed;
+    margin: 10px 10px;
+    right: -10px;
+    top: 10px;
+    cursor: pointer;
+}
+
 .button-left {
     border: none;
     display: inline-block;
@@ -53,31 +64,40 @@
 }
 
 .arrow-left {
-width: 30px;
+width: 40px;
 }
 
 .arrow-right{
-	width: 30px;
+	width: 40px;
 	transform: rotate(180deg);
 }
 
 
 .display-left {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 0%;
     transform: translate(0%,-50%);
-    -ms-transform: translate(-0%,-50%)
+    -ms-transform: translate(-0%,-50%);
+    background-color:white;
 }
 
 .display-right {
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: 0%;
     transform: translate(0%,-50%);
-    -ms-transform: translate(0%,-50%)
+    -ms-transform: translate(0%,-50%);
+    background-color: white;
 }
 
+.display-left:hover {
+    background: #ffffffa8;
+}
+
+.display-right:hover {
+    background: #ffffffa8;
+}
 
 .overlay {
     height: 0%;
@@ -116,12 +136,25 @@ width: 30px;
 
 .overlay .closebtn {
     position: absolute;
-	top: -40px;
-    right: -5px;
-    font-size: 60px;
+	top: -30px;
+    right: 10px;
+    font-size: 80px;
     color: red;
 }
 
+
+.date {
+    position: absolute;
+    right: 3%;
+    bottom: 20%;
+    color: #fff;
+}
+
+.txt-date {
+    text-align: right;
+    font-size: 35px;
+    white-space: nowrap;
+}
 .services-header {
 	text-align: center;
 	text-transform: uppercase;
@@ -133,36 +166,34 @@ width: 30px;
 
 .box-header {
 	text-align: center;
-	margin-bottom: 50px;
+	margin-top: 50px;
 	font-family: 'robotoregular' sans-serif; 
 	text-transform: uppercase;
 	letter-spacing: 7px;
+    padding-bottom: 50px;
+
 }
 
-.services-box {
+.box-header-1 {
+    text-align: center;
+    margin-top: 60px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    padding-bottom: 50px;
+
+}
+
+.services-background {
 	background-color: #EBE8DE;
-	margin-right: 2.33%;
-	/*height: 395px;*/
-}
+	}
 
-.repair {
-	margin-right: 0;
-}
 
-.modify {
-	margin-left: 5%;
-}
-
-.col-width {
-	max-width: 28%!important;
-
-}
 
 .services-img{
-	width: 50%;
+	width: 30%;
 	display: block;
 	margin:auto;
-	padding: 25px 0 25px 0;
+	padding: 50px 0 25px 0;
 }
 
 .bus-background {
@@ -179,11 +210,10 @@ width: 30px;
 
 #googlemaps { 
  /* height: 90%;*/ 
- height: 570px;
-  width: 80%; 
+ height: 770px;
+  width: 100%; 
   position:absolute; 
   top: 0; 
-  left: 10%; 
   z-index: 0; 
 
 
@@ -199,22 +229,40 @@ width: 30px;
 }
 
 
-
-.adress-left {
-	background-color: #EBE8DE;
-
+.bus-background {
+    position: relative;
+    background-image: url(../images/background-bus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 260px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-.radio {
-	float: left;
-	background-color: #FFFFFF;
-	padding-top: 80px;
-    
+.bus {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+   -moz-animation:myfirst 10s  linear infinite;
+  -webkit-animation:myfirst 10s  linear infinite;
+}
+@-moz-keyframes myfirst 
+{
+    0%   {right:-25%;}
+    100% {right:100%;}
+} 
+@-webkit-keyframes myfirst
+{
+    0%   {right:-25%;}
+    100% {right:100%;}
+} 
 }
 
 .radio-txt {
-    vertical-align: text-bottom;
+ 
     word-spacing: 30px;
+    white-space: nowrap;
 }
 .chackbox-txt{
     margin-left: 10px;
@@ -223,8 +271,8 @@ width: 30px;
 
 
 
-#contact-form input[type=text], input[type=email], textarea {
-    width: 70%;
+.contact-form input[type=text], input[type=email], textarea {
+    width: 90%;
     padding: 10px 10px;
     margin: 6px 0;
     display: inline-block;
@@ -234,12 +282,12 @@ width: 30px;
 	background-color: #F2F2F2;
 	color: #4D4D4D;
 	font-size: 15px;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
 
 }
 
 .contact-form{
-    padding-top: 245px;
+    padding-top: 340px;
 }
 
 #message-txt {
@@ -248,18 +296,18 @@ width: 30px;
 
 .adress-right{
 	background-color: #FFFFFF;
+    border: solid 1px #DFDFDF;
 }
 
 
 .checkbox-header{
 	margin-top: 85px;
     margin-bottom: 15px;
+    white-space: nowrap;
 
 }
 
 .contact-info {
-    margin-left: 20px;
-    margin-top: 20px;
     text-transform: uppercase;
     font-family: 'robotoregular' sans-serif;
 }
@@ -273,9 +321,8 @@ width: 30px;
 .contact-header {
     font-family: 'robotoregular' sans-serif;
     text-transform: uppercase;
-    letter-spacing: 7px;
-    margin-left: 20px;
-    margin-top: 20px;
+    letter-spacing: 12px;
+    margin-left: 20px;    
 }
 
 #submitBtn {
@@ -284,6 +331,10 @@ width: 30px;
     float: right;
     margin-right: 25px;
     margin-top: 30px;
+    border: none;
+    padding: 4px;
+    letter-spacing: 3px;
+    font-weight: bold;
 }
 
 .social-icon {
@@ -320,6 +371,12 @@ width: 30px;
     color: red;
 }
 
+.social-icon2 {
+    width:40px;
+    float: right;
+}
+
+
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px}
@@ -330,3 +387,23 @@ width: 30px;
   }
 }
 
+@media screen and (max-width: 990px) {
+#submitBtn {
+    float: left!important;
+}
+.adress-left{
+    display: none;
+
+}
+
+.adress-right {
+    background: #EBE8DE;
+}
+.social-icon-txt{
+    display: block!important;
+}
+.line-horizontal{
+    display: block!important;
+}
+
+}

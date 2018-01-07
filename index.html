@@ -1,167 +1,177 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Auto </title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
-	<link rel="stylesheet" type="text/css" href="css/custom-style.css">	 
-</head>
-<body>
-
-
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="navClose">&times;</a>
-   <div class="overlay-content">
-	    <a href="#home">Home</a>
-	    <a href="#services">Services</a>
-	    <a href="#contact">Contact</a>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Auto </title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="css/fonts.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+      <link rel="stylesheet" type="text/css" href="css/custom-style.css">	 
+  </head>
+  <body>
+  
+  
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="navClose">&times;</a>
+     <div class="overlay-content font-weight-bold">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+     </div>
+  </div>
+  
+  
+  <div class="button-content display-container"> </div>
+     <div style="z-index: 2" id="burgerIcon" onclick="openNav()" > 
+           <img src="images/burger.svg">
    </div>
-</div>
-
-
-<div class="button-content display-container"> </div>
-   <span style="font-size:30px;
-			 cursor:pointer;   
-		 	 position: fixed;
-		     right: 10px;
-		     color: red;
-		     z-index: 1" 
-         onclick="openNav()" id="burgerIcon">&#9776;
-   </span>
-
-<div id="home" style="position: relative;">
-
-		<img class="logo-img" id="logoWhite" src="images/logo-white.svg" alt="logo-white"> 
-		<img class="logo-img" id="logoRed" src="images/logo-red.svg" alt="logo-red" style="display: none; z-index: 1">
-
-	 <div class="display-container mySlides">
-	    <img src="images/car.png" alt="car" style="width:100%;">
-	 </div>
-
-	 <div class="display-container mySlides">
-	    <img src="images/tree.jpg" alt="tree" style="width:100%">
-	 </div>
-
-	 <div class="display-container mySlides">
-	    <img src="images/car.png" alt="car" style="width:100%">
-	 </div>
-	<div class="button-left display-left" onclick="plusDivs(-1)"><img class="arrow-left" src="images/arrow.svg" alt="arrow"></div>
-	<div class="button-right display-right" onclick="plusDivs(1)"><img class="arrow-right" src="images/arrow.svg" alt="arrow"> </div>
-
-</div>
-
-
-
-<div id="services">
-	 <div class="container">
-		 <h1 class="services-header col-12"> 
-			the corner garage for collector cars
-		 </h1>
-
-		<div class="row">
-			<div class=" services-box col-width modify col-md-4">
-				<a href="#"><img class="services-img" src="images/modify.svg" alt="modify"> </a>
-				<h1 class="box-header">  modify </h1>
-			</div>
-			
-		    <div class=" services-box col-width col-md-4">
-			    <a href="#"> <img class="services-img" src="images/buy.svg" alt="buy"> </a>
-				<h1 class="box-header">  buy </h1>
-			</div>
-
-		     <div class="services-box repair col-width col-md-4">
-			    <a href="#"> <img class="services-img" src="images/repair.svg" alt="repair"> </a>
-				<h1 class="box-header">  repair </h1>
-			</div>
-
-		</div>
-		
-	 </div>
-
-	     <div class="container-fluid">
-		    <img class="bus-background" src="images/background-bus.svg" alt="background-bus">
-         </div>
-</div>
-
-
-<div id="contact" style="position: relative;"> 
-
-    <div id="googlemaps"> </div>
-
-     <div class="container contact-form">
-	    <div class="row">
-
-		          <div class="col-md-1"> </div>
-
-                       <div class="col-md-3 adress-left"> 
-	                        <h2 class="contact-info"> contact information  </h2>
-	                        <h2 class="contact-info2"> click to <br/> view </h2>
-
-						    <div class="social-img">
-						     <a href="https://plus.google.com"> <img class="social-icon" src="images/google.svg" alt="google"> </a>
-						     <a href="https://facebook.com"> <img class="social-icon" src="images/fb.svg" alt="facebook"> </a>
-							 <a href="https://twitter.com"> <img class="social-icon" src="images/twitter.svg" alt="twitter"> </a>
-						   </div>
-                       </div>
-
-
-                       <div class="col-md-4 adress-right">
-
-   	                     <h2 class="contact-header"> get in touch </h2>
-           
-                      <form id="contact-form"> 
-                          <input type="text" id="name-txt" name="name-txt" placeholder="name" required>
-                          <div style="display: none;" class="validation-msg"> please write your name </div>
-                          <input type="email" id="email-txt" name="email-txt" placeholder="email" required>
-                          <div style="display: none;" class="validation-msg"> please write your email </div>
-                          <input type="text" id="subject-txt" name="subject-txt" placeholder="subject" required>
-                          <div style="display: none;" class="validation-msg"> please write your subject </div>
-                          <textarea id="message-txt" name="message-txt" placeholder="text" rows="3" required></textarea>
-                          <div style="display: none;" class="validation-msg"> please write text </div>
-                       </div>
-
-                          <div class="col-md-3 radio">
-						      <input type="radio" name="gender" value="male"> <span class="radio-txt"> Male </span>
-						      <input type="radio" name="gender" value="female"> <span class="radio-txt"> Female </span>
-						      <div style="display: none;" class="validation-msg-gender"> please choose your gender </div>
-				              <div class="checkbox-header"> sign up for newsletter: </div>
-							  <input type="checkbox" name="vehicle" value="image"> <span class="chackbox-txt"> recive images <br> </span>
-							  <input type="checkbox" name="vehicle" value="promotion"> <span class="chackbox-txt"> recive promotions <br> </span>
-							  <input type="checkbox" name="vehicle" value="update"> <span class="chackbox-txt"> recive updates <br> </span>
-							  <input type="checkbox" name="vehicle" value="job"> <span class="chackbox-txt"> recive job offers <br> </span>
-
-				              <input type="submit" id="submitBtn" value="send">
-
-			              </div>
-			              <div style="display: none;" class="validation-msg-radio"> Thank you for your intereset for us, your message has been sent! </div>
-	                   </form>
-                               <div class="col-md-1"> </div>
-
-</div>
-   </div>
-      </div>
-
-
-
-
-<footer>
-  <div class="container footer-txt"> 
-    <div class="row">
-	  <div class="col-md-1 col-sm-1"> </div>
-        <div class="col-md-5 col-sm-5"> <span class="footer-txt1"> © copyright 2018 </span> </div>
-          <div class="col-md-5 col-sm-5"> <span class="footer-txt2" > created by: Dako Siadmonidze </span> </div>
-          <div class="col-md-1 col-sm-1"> </div>
+  <div id="home" style="position: relative;">
+  
+          <img class="logo-img" id="logoWhite" src="images/logo-white.svg" alt="logo-white"> 
+          <img class="logo-img" id="logoRed" src="images/logo-red.svg" alt="logo-red" style="display: none; z-index: 1">
+  
+       <div class="display-container mySlides">
+          <img src="images/car.png" alt="car" style="width:100%;">
+       </div>
+  
+       <div class="display-container mySlides">
+          <img src="images/car.png" alt="tree" style="width:100%">
+       </div>
+  
+       <div class="display-container mySlides">
+          <img src="images/car.png" alt="car" style="width:100%">
+       </div>
+      <div class="button-left display-left" onclick="plusDivs(-1)"><img class="arrow-left" src="images/arrow.svg" alt="arrow"></div>
+      <div class="button-right display-right" onclick="plusDivs(1)"><img class="arrow-right" src="images/arrow.svg" alt="arrow"> </div>
+  
+     <div class="date">
+        <h2 class="txt-date">27.11.</h1>
+        <h2 class="txt-date">Vintage Auto Exhibition</h2>
     </div>
-  </div>	
-</footer>
+  </div>
+  
+  
+  
+  
+  <div id="services">
+       <div class="container">
+           <h1 class="services-header col-12"> 
+              the corner garage for collector cars
+           </h1>
+  
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="services-background">
+                  <a href="#"><img class="services-img" src="images/modify.svg" alt="modify"> </a>
+                  <h1 class="box-header">  modify </h1>
+                  </div>
+              </div>
+              
+              <div class="col-md-4">
+                  <div class="services-background">
+                  <a href="#"> <img class="services-img" src="images/buy.svg" alt="buy"> </a>
+                  <h1 class="box-header-1">  buy </h1>
+                  </div>
+              </div>
+  
+               <div class="col-md-4">
+                  <div class="services-background">
+                  <a href="#"> <img class="services-img" src="images/repair.svg" alt="repair"> </a>
+                  <h1 class="box-header">  repair </h1>
+                  </div>
+              </div>
+  
+          </div>
+          
+       </div>
+  
+           <div class="container-fluid bus-background ">
+              <div class="bus"> <img style="width: 385px; float:right;" src="images/bus.png"></div>
+           </div>
+  </div>
+  
+  
+  <div id="contact" style="position: relative;"> 
+  
+      <div id="googlemaps"> </div>
+  
+       <div class="container contact-form">
+          <div class="row">
+             <div style="background: #EBE8DE" class="col-lg-4 col-md-12 p-5 adress-left "> 
+                  <h2 class="contact-info font-weight-bold"> contact information  </h2>
+                  <h2 class="contact-info2 font-weight-bold"> click to <br/> view </h2>
+      
+                  <div class="social-img">
+                   <a href="https://plus.google.com"> <img class="social-icon" src="images/google.svg" alt="google"> </a>
+                   <a href="https://facebook.com"> <img class="social-icon" src="images/fb.svg" alt="facebook"> </a>
+                   <a href="https://twitter.com"> <img class="social-icon" src="images/twitter.svg" alt="twitter"> </a>
+                 </div>
+             </div>
+      
+      
+             <div class="col-lg-8 col-md-8 col-md-12 col-sm-12 p-5 adress-right">
+              <div class="row">
+              	<h2 class=" contact-header text-left mb-4 font-weight-bold">GET IN TOUCH</h2>     
+            <div class="col-md-6">
+                <input type="text" id="name-txt" name="name-txt" placeholder="name" required>
+                <div style="display: none;" class="validation-msg"> please write your name </div>
+                <input type="email" id="email-txt" name="email-txt" placeholder="email" required>
+                <div style="display: none;" class="validation-msg"> please write your email </div>
+                <input type="text" id="subject-txt" name="subject-txt" placeholder="subject" required>
+                <div style="display: none;" class="validation-msg"> please write your subject </div>
+                <textarea id="message-txt" name="message-txt" placeholder="text" rows="3" required></textarea>
+                <div style="display: none;" class="validation-msg"> please write text </div>     
+            </div>
+      
+      
+               <div style="white-space: nowrap;" class="col-5 ml-2 font-weight-bold">
+                    <input type="radio" name="gender" value="male"> <span class="radio-txt"> Male </span>
+                    <input type="radio" name="gender" value="female"> <span class="radio-txt"> Female </span>
+                    <div style="display: none;" class="validation-msg-gender"> please choose your gender </div>
+                    <div class="checkbox-header"> sign up for newsletter: </div>
+                    <input type="checkbox" name="vehicle" value="image"> <span class="chackbox-txt"> recive images <br> </span>
+                    <input type="checkbox" name="vehicle" value="promotion"> <span class="chackbox-txt"> recive promotions <br> </span>
+                    <input type="checkbox" name="vehicle" value="update"> <span class="chackbox-txt"> recive updates <br> </span>
+                    <input type="checkbox" name="vehicle" value="job"> <span class="chackbox-txt"> recive job offers <br> </span>       
+                    <input  style="float: right" type="submit" id="submitBtn" value="send">
+             </div>
+            </div>  
+                <div style="display: none;" class="validation-msg-radio"> Thank you for your intereset for us, your message has been sent! </div>    
+             </div>                
+          </div>   
+     </div>
+   </div>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmoBnSQuXV6ItsLfXAwPzCQQc16422n8c&sensor=false"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="js/custom-js.js"></script>
+<div style="display: none;" class="container social-icon-txt"> 
+	<div class="row">
+             <div class="col-md-9 col-sm-7"> 
+                  <h2 class="contact-info3 font-weight-bold"> click to view </h2>
+             </div>
+                  <div class=" col-md-3 col-sm-5 social-img-2">
+                   <a href="https://plus.google.com"> <img class="social-icon2" src="images/google.svg" alt="google"> </a>
+                   <a href="https://facebook.com"> <img class="social-icon2" src="images/fb.svg" alt="facebook"> </a>
+                   <a href="https://twitter.com"> <img class="social-icon2" src="images/twitter.svg" alt="twitter"> </a>
+                 </div>      
+    </div>
+</div>
 
-</body>
-</html>
+<span style="display: none;" class="line-horizontal"> <hr> </span>
+
+ 
+  <footer>
+    <div class="container footer-txt"> 
+      <div class="row">
+          <div class="col-lg-5 col-md-5 col-sm-5"> <span class="footer-txt1"> © copyright 2018 </span> </div>
+            <div class="col-lg-7 col-md-7 col-sm-7"> <span class="footer-txt2" > created by: Dako Sidamonidze </span> </div>
+      </div>
+    </div>	
+  </footer>
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmoBnSQuXV6ItsLfXAwPzCQQc16422n8c&sensor=false"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/custom-js.js"></script>
+  
+  </body>
+  </html>
