@@ -16,8 +16,6 @@
     background-color: #ccc!important
 }
 
-
-
 #burgerIcon {
     width: 75px;
     position: fixed;
@@ -31,7 +29,7 @@
     border: none;
     display: inline-block;
     outline: 0;
-    padding: 4% 1%;
+    padding: 25% 7%;
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
@@ -50,7 +48,7 @@
     border: none;
     display: inline-block;
     outline: 0;
-    padding: 4% 1%;
+    padding: 25% 7%;
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
@@ -64,18 +62,18 @@
 }
 
 .arrow-left {
-width: 40px;
+width: 80%;
 }
 
 .arrow-right{
-	width: 40px;
+	width: 80%;
 	transform: rotate(180deg);
 }
 
 
 .display-left {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 0%;
     transform: translate(0%,-50%);
     -ms-transform: translate(-0%,-50%);
@@ -84,7 +82,7 @@ width: 40px;
 
 .display-right {
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 0%;
     transform: translate(0%,-50%);
     -ms-transform: translate(0%,-50%);
@@ -103,7 +101,7 @@ width: 40px;
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
     background-color: rgb(255,255,255);
@@ -410,10 +408,17 @@ width: 40px;
 .line-horizontal{
     display: block!important;
 }
+.bus-background {
+    display: none;
+}
+.bus {
+    display: none;
+}
 
 }
 
 @media screen and (min-width: 1400px) {
+.bus-background{
         height: 400px;
     }
 .bus img{
