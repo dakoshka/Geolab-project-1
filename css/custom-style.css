@@ -408,12 +408,12 @@ width: 80%;
 .line-horizontal{
     display: block!important;
 }
-/* .bus-background {
+.bus-background {
     display: none;
 }
 .bus {
     display: none;
-} */
+}
 
 .txt-date {
     font-size: 20px;
