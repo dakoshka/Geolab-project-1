@@ -478,12 +478,15 @@ input[type="radio"], input[type="checkbox"] {
 
 @media screen and (min-width: 1400px) {
 .bus-background{
-        height: 400px;
+        height: 360px;
     }
-.bus img{
+/* .bus img{
     width: 590px!important;
-}
-
+} */
+	
+.bus {
+margin-top:170px;
+	}
 }
 
 @media screen and (max-width: 767px) {
