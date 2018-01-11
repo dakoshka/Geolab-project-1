@@ -128,7 +128,7 @@ width: 80%;
 }
 
 .overlay a {
-    font-family: RobotoCondensed-Bold, sans-serif;
+    font-family: RobotoCondensed-Regular, sans-serif;
     padding: 8px;
     text-decoration: none;
     font-size: 45px;
@@ -158,7 +158,7 @@ width: 80%;
 }
 
 .txt-date {
-    font-family: RobotoCondensed-Bold, sans-serif;
+    font-family: RobotoCondensed-Regular, sans-serif;
     text-align: right;
     font-size: 40px;
     white-space: nowrap;
@@ -171,8 +171,8 @@ width: 80%;
 }
 
 .services-header {
-    font-family: RobotoCondensed-Bold, sans-serif;
-    font-size: 35px;
+    font-family: RobotoCondensed-Regular, sans-serif;
+    font-size: 45px;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 7px;
@@ -181,13 +181,13 @@ width: 80%;
 }
 
 .box-header {
-    font-family: RobotoCondensed-Bold, sans-serif;
+    font-family: RobotoCondensed-Regular, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 7px;
     padding-bottom: 50px;
     margin-top: 50px;
-    font-size: 37px;
+    font-size: 40px;
 
 }
 
@@ -268,15 +268,18 @@ width: 80%;
 } 
 
 .radio-txt {
-    font-family: RobotoCondensed-Light, sans-serif;
+    font-family: RobotoCondensed-Regular, sans-serif;
     font-size: 16px;
     word-spacing: 30px;
     white-space: nowrap;
+    letter-spacing: 2px;
+    margin-left: 10px;
 }
 .chackbox-txt{
-    font-family: RobotoCondensed-Light, sans-serif;
-    font-size: 16px;
-    margin-left: 10px;
+    font-family: RobotoCondensed-Regular, sans-serif;
+    font-size: 17px;
+    margin-left: 20px;
+   
 
 }
 
@@ -298,8 +301,9 @@ width: 80%;
 }
 
 input[type="radio"], input[type="checkbox"] {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
 }
 
 .contact-form{
@@ -317,31 +321,32 @@ input[type="radio"], input[type="checkbox"] {
 
 
 .checkbox-header{
-    font-family: RobotoCondensed-Light, sans-serif;
-    font-size: 16px;
+    font-family: RobotoCondensed-Regular, sans-serif;
+    font-size: 18px;
 	margin-top: 100px;
     margin-bottom: 15px;
     white-space: nowrap;
+    letter-spacing: 2px;
 
 }
 
 
 .contact-info {
-    font-family: RobotoCondensed-Bold, sans-serif;
+    font-family: RobotoCondensed-Regular, sans-serif;
     font-size: 35px;
     text-transform: uppercase;
 
 }
 
 .contact-info2 {
-    font-family: RobotoCondensed-Bold, sans-serif;
+    font-family: RobotoCondensed-Regular, sans-serif;
     font-size: 35px;
     margin-top: 135px;
     text-align: center
 }
 
 .contact-header {
-    font-family: RobotoCondensed-Bold, sans-serif;
+    font-family: RobotoCondensed-Regular, sans-serif;
     font-size: 35px;
     text-transform: uppercase;
     letter-spacing: 12px;
@@ -349,7 +354,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 #submitBtn {
-    font-family: RobotoCondensed-Bold, sans-serif;
+    font-family: RobotoCondensed-Regular, sans-serif;
     font-size: 15px;
     background: black;
     color: white;
@@ -359,7 +364,6 @@ input[type="radio"], input[type="checkbox"] {
     border: none;
     padding: 4px;
     letter-spacing: 3px;
-    font-weight: bold;
 }
 
 .social-icon {
@@ -400,13 +404,13 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .footer-txt {
-    font-family: Roboto-Thin, sans-serif;
+    font-family: RobotoCondensed-Regular, sans-serif;
     font-size: 15px;
     line-height: 3;
 }
 
 .footer-txt2 {
-    font-family: Roboto-Thin, sans-serif;
+    font-family: RobotoCondensed-Regular, sans-serif;
     font-size: 15px;
     float: right;
 }
@@ -447,7 +451,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .contact-info3 {
-    font-family: RobotoCondensed-Bold, sans-serif;
+    font-family: RobotoCondensed-Regular, sans-serif;
     font-size: 30px;
     margin-top: 20px;
 }
@@ -480,9 +484,9 @@ input[type="radio"], input[type="checkbox"] {
 .bus-background{
         height: 400px;
     }
-.bus img{
+/*.bus img{
     width: 590px!important;
-}
+}*/
 
 }
 
