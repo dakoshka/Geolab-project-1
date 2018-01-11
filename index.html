@@ -7,6 +7,7 @@
       <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
       <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
       <link rel="stylesheet" type="text/css" href="css/fonts.css">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
       <link rel="stylesheet" type="text/css" href="css/custom-style.css">	 
   </head>
@@ -15,7 +16,7 @@
   
   <header id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="navClose">&times;</a>
-     <div class="overlay-content font-weight-bold">
+     <div class="overlay-content">
           <a href="#home">Home</a>
           <a href="#services">Services</a>
           <a href="#contact">Contact</a>
@@ -25,7 +26,8 @@
 
    <div class="button-content display-container"> </div>
      <div style="z-index: 2" id="burgerIcon" onclick="openNav()" > 
-           <img src="images/burger.svg" alt="burger">
+           <img class="burger-img" src="images/burger-white.svg" alt="burger">
+           <img style="display: none;" class="burger-img2" src="images/burger-red.svg" alt="burger">
    </div>
 
 
@@ -59,8 +61,8 @@
 </div>
 
  <div class="date">
-        <h2 class="txt-date">27.11.</h2>
-        <h2 class="txt-date">Vintage Auto Exhibition</h2>
+        <div class="txt-date">27.11.</div>
+        <div class="txt-date-2">Vintage Auto Exhibition</div>
     </div>
 </div>
 
@@ -69,29 +71,29 @@
   
   <div id="services">
        <div class="container">
-           <h1 class="services-header col-12"> 
-              the corner garage for collector cars
-           </h1>
+           <div class="services-header col-12"> 
+              the corner garage for  collector cars
+           </div>
   
           <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-12">
                   <div class="services-background">
                   <a href="#"><img class="services-img" src="images/modify.svg" alt="modify"> </a>
-                  <h1 class="box-header">  modify </h1>
+                  <div class="box-header">  modify </div>
                   </div>
               </div>
               
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-12">
                   <div class="services-background">
                   <a href="#"> <img class="services-img" src="images/buy.svg" alt="buy"> </a>
-                  <h1 class="box-header-1">  buy </h1>
+                  <div class="box-header">  buy </div>
                   </div>
               </div>
   
-               <div class="col-md-4">
+               <div class="col-md-4 col-sm-12">
                   <div class="services-background">
                   <a href="#"> <img class="services-img" src="images/repair.svg" alt="repair"> </a>
-                  <h1 class="box-header">  repair </h1>
+                  <div class="box-header">  repair </div>
                   </div>
               </div>
   
@@ -100,7 +102,7 @@
        </div>
   
            <div class="container-fluid bus-background ">
-              <div class="bus"> <img style="width: 385px; float:right;" src="images/bus.png" alt="bus"></div>
+              <div class="bus"> <img style="width: 270px; float:right;" src="images/bus.png" alt="bus"></div>
            </div>
   </div>
   
@@ -112,20 +114,21 @@
        <div class="container contact-form">
           <div class="row">
              <div style="background: #EBE8DE" class="col-lg-4 col-md-12 p-5 adress-left "> 
-                  <h2 class="contact-info font-weight-bold"> contact information  </h2>
-                  <h2 class="contact-info2 font-weight-bold"> click to <br/> view </h2>
+                  <div class="contact-info"> contact information  </div>
+                  <div class="contact-info2"> click to <br/> view </div>
       
                   <div class="social-img">
-                   <a href="https://plus.google.com"> <img class="social-icon" src="images/google.svg" alt="google"> </a>
-                   <a href="https://facebook.com"> <img class="social-icon" src="images/fb.svg" alt="facebook"> </a>
-                   <a href="https://twitter.com"> <img class="social-icon" src="images/twitter.svg" alt="twitter"> </a>
+                   <a href="https://plus.google.com" target="_blank"> <i class="fa fa-google-plus social-icon google-plus" aria-hidden="true"></i> </a>
+                   <a href="https://facebook.com" target="_blank"> <i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i> </a>
+                   <a href="https://twitter.com" target="_blank"> <i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i> </a>
                  </div>
              </div>
       
       
-             <div class="col-lg-8 col-md-8 col-md-12 col-sm-12 p-5 adress-right">
+           <div class="col-lg-8 col-md-8 col-md-12 col-sm-12 p-5 adress-right">
+             <form method="post">
               <div class="row">
-              	<h2 class=" contact-header text-left mb-4 font-weight-bold">GET IN TOUCH</h2>     
+              	<div class=" contact-header text-left mb-4 ">GET IN TOUCH</div>     
             <div class="col-md-6">
                 <input type="text" id="name-txt" name="name-txt" placeholder="name" required>
                 <div style="display: none;" class="validation-msg"> please write your name </div>
@@ -138,7 +141,7 @@
             </div>
       
       
-               <div style="white-space: nowrap;" class="col-5 ml-2 font-weight-bold">
+               <div style="white-space: nowrap;" class="col-5 ml-2">
                     <input type="radio" name="gender" value="male"> <span class="radio-txt"> Male </span>
                     <input type="radio" name="gender" value="female"> <span class="radio-txt"> Female </span>
                     <div style="display: none;" class="validation-msg-gender"> please choose your gender </div>
@@ -150,21 +153,22 @@
                     <input  style="float: right" type="submit" id="submitBtn" value="send">
              </div>
             </div>  
-                <div style="display: none;" class="validation-msg-radio"> Thank you for your intereset for us, your message has been sent! </div>    
-             </div>                
-          </div>   
+                <div style="display: none;" class="validation-msg-radio"> Thank you for your intereset for us, your message has been sent! </div>  
+                </form>   
+              </div>             
+         </div>   
      </div>
    </div>
 
 <div style="display: none;" class="container social-icon-txt"> 
 	<div class="row">
              <div class="col-md-9 col-sm-7 col-7"> 
-                  <h2 class="contact-info3 font-weight-bold"> click to view </h2>
+                  <div class="contact-info3"> click to view </div>
              </div>
-                  <div class=" col-md-3 col-sm-5 col-5 social-img-2 pl-40">
-                   <a href="https://plus.google.com"> <img style="margin-top: 2px" class="social-icon2" src="images/google.svg" alt="google"> </a>
-                   <a href="https://facebook.com"> <img class="social-icon2" src="images/fb.svg" alt="facebook"> </a>
-                   <a href="https://twitter.com"> <img class="social-icon2" src="images/twitter.svg" alt="twitter"> </a>
+                  <div class=" col-md-3 col-sm-5 col-5 social-img2 pl-40">
+                  <a href="https://plus.google.com" target="_blank"> <i class="fa fa-google-plus social-icon google-plus" aria-hidden="true"></i> </a>
+                   <a href="https://facebook.com" target="_blank"> <i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i> </a>
+                   <a href="https://twitter.com" target="_blank"> <i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i> </a>
                  </div>      
     </div>
 </div>

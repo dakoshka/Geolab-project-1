@@ -25,6 +25,10 @@
     cursor: pointer;
 }
 
+.burger-img , .burger-img2 {
+    width: 85%;
+}
+
 .button-left {
     border: none;
     display: inline-block;
@@ -119,10 +123,15 @@ width: 80%;
     margin-left: 25%;
 }
 
+.overlay-content a:hover {
+    color: #FF0000!important;
+}
+
 .overlay a {
+    font-family: RobotoCondensed-Bold, sans-serif;
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 45px;
     color: black;
     display: block;
     transition: 0.3s;
@@ -149,61 +158,56 @@ width: 80%;
 }
 
 .txt-date {
+    font-family: RobotoCondensed-Bold, sans-serif;
     text-align: right;
-    font-size: 35px;
+    font-size: 40px;
     white-space: nowrap;
 }
+
+.txt-date-2 {
+    font-family: RobotoCondensed-Light, sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
 .services-header {
+    font-family: RobotoCondensed-Bold, sans-serif;
+    font-size: 35px;
 	text-align: center;
 	text-transform: uppercase;
-	font-family: 'robotoregular'sans-serif;
 	letter-spacing: 7px;
 	margin: 0 0 50px 0;
 
 }
 
 .box-header {
+    font-family: RobotoCondensed-Bold, sans-serif;
 	text-align: center;
-	margin-top: 50px;
-	font-family: 'robotoregular' sans-serif; 
 	text-transform: uppercase;
 	letter-spacing: 7px;
     padding-bottom: 50px;
+    margin-top: 50px;
+    font-size: 37px;
 
 }
 
-.box-header-1 {
-    text-align: center;
-    margin-top: 60px;
-    text-transform: uppercase;
-    letter-spacing: 7px;
-    padding-bottom: 50px;
-
-}
 
 .services-background {
 	background-color: #EBE8DE;
+    margin-bottom: 20px; 
 	}
 
-
-
 .services-img{
-	width: 30%;
+	width: 45%;
 	display: block;
 	margin:auto;
-	padding: 50px 0 25px 0;
+	padding: 40px 0 10px 0;
 }
 
 .bus-background {
 	width: 100%;
 	position: relative;
 }
-
-/*.bus-img{
-	width: 25%;
-
-}*/
-
 
 
 #googlemaps { 
@@ -245,6 +249,7 @@ width: 80%;
     animation:myfirst 10s  linear infinite;
    -moz-animation:myfirst 10s  linear infinite;
   -webkit-animation:myfirst 10s  linear infinite;
+  margin-top: 75px;
 }
 @-moz-keyframes myfirst 
 {
@@ -263,11 +268,14 @@ width: 80%;
 } 
 
 .radio-txt {
- 
+    font-family: RobotoCondensed-Light, sans-serif;
+    font-size: 16px;
     word-spacing: 30px;
     white-space: nowrap;
 }
 .chackbox-txt{
+    font-family: RobotoCondensed-Light, sans-serif;
+    font-size: 16px;
     margin-left: 10px;
 
 }
@@ -289,6 +297,11 @@ width: 80%;
 
 }
 
+input[type="radio"], input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+
 .contact-form{
     padding-top: 340px;
 }
@@ -304,31 +317,40 @@ width: 80%;
 
 
 .checkbox-header{
-	margin-top: 85px;
+    font-family: RobotoCondensed-Light, sans-serif;
+    font-size: 16px;
+	margin-top: 100px;
     margin-bottom: 15px;
     white-space: nowrap;
 
 }
 
+
 .contact-info {
+    font-family: RobotoCondensed-Bold, sans-serif;
+    font-size: 35px;
     text-transform: uppercase;
-    font-family: 'robotoregular' sans-serif;
+
 }
 
 .contact-info2 {
+    font-family: RobotoCondensed-Bold, sans-serif;
+    font-size: 35px;
     margin-top: 135px;
-    text-align: center;
-    font-family: 'robotoregular' sans-serif;
+    text-align: center
 }
 
 .contact-header {
-    font-family: 'robotoregular' sans-serif;
+    font-family: RobotoCondensed-Bold, sans-serif;
+    font-size: 35px;
     text-transform: uppercase;
     letter-spacing: 12px;
     margin-left: 20px;    
 }
 
 #submitBtn {
+    font-family: RobotoCondensed-Bold, sans-serif;
+    font-size: 15px;
     background: black;
     color: white;
     float: right;
@@ -341,20 +363,51 @@ width: 80%;
 }
 
 .social-icon {
-    width: 20%;
-    text-align: center;
+    border: solid #000000 1px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 50px;
+    padding-top: 10px;
+    margin-right: 5px;
+    font-weight: bold;
+    color: #000000;   
+    
 }
 
 .social-img {
     text-align: center;
     padding-bottom: 30px;
 }
+.social-img a, .social-img2 a {
+    text-decoration: none;
+}
+
+.google-plus:hover {
+      color: #DB4437;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.twitter:hover {
+    color: #1DA1F2;
+}
+.social-img2 {
+    text-align: center;
+    margin-top: 20px;
+}
 
 .footer-txt {
+    font-family: Roboto-Thin, sans-serif;
+    font-size: 15px;
     line-height: 3;
 }
 
 .footer-txt2 {
+    font-family: Roboto-Thin, sans-serif;
+    font-size: 15px;
     float: right;
 }
 
@@ -374,11 +427,6 @@ width: 80%;
     color: red;
 }
 
-.social-icon2 {
-    width:40px;
-
-}
-
 
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
@@ -390,13 +438,18 @@ width: 80%;
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 991px) {
 #submitBtn {
     float: left!important;
 }
-.adress-left{
+.adress-left {
     display: none;
+}
 
+.contact-info3 {
+    font-family: RobotoCondensed-Bold, sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
 }
 
 .adress-right {
@@ -416,9 +469,11 @@ width: 80%;
 }
 
 .txt-date {
-    font-size: 20px;
+    font-size: 25px;
 }
 
+.txt-date-2 {
+    font-size: 25px;
 }
 
 @media screen and (min-width: 1400px) {
@@ -430,3 +485,8 @@ width: 80%;
 }
 
 }
+
+@media screen and (max-width: 767px) {
+    .checkbox-header {
+        margin-top: 25px;
+    }

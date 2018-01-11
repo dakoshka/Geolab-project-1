@@ -35,11 +35,25 @@ $('#map_container').css("background-image","url(https://www.google.com/maps/embe
     
 });
 
+//change burger icon on scroll
+var height = $('#home').height() * 0.778;
+$(window).on('resize', function(){
+    height = $('#home').height() * 0.778;
+});
+
+$(document).scroll(function() {
+    $('.burger-img2').css({display: $(this).scrollTop() > height ? "block":"none"});
+    $('.burger-img').css({display: $(this).scrollTop() < height ? "block":"none"});
+
+});
+
 
 function submitClicked(){
   alert('Message Sent!');
   return false;
 }
+
+
 
 
 // The latitude and longitude of your business / place
