@@ -351,7 +351,8 @@ input[type="radio"], input[type="checkbox"] {
     font-size: 35px;
     text-transform: uppercase;
     letter-spacing: 12px;
-    margin-left: 20px;    
+    margin-left: 20px; 
+    white-space: nowrap;   
 }
 
 #submitBtn {
@@ -402,6 +403,7 @@ input[type="radio"], input[type="checkbox"] {
 .social-img2 {
     text-align: center;
     margin-top: 20px;
+    white-space: nowrap;
 }
 
 .footer-txt {
@@ -496,5 +498,15 @@ margin-top:170px;
 @media screen and (max-width: 767px) {
     .checkbox-header {
         margin-top: 25px;
+    }
+
+    .services-header {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .contact-header {
+        font-size: 25px;
     }
 }
