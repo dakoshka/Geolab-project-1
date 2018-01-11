@@ -475,17 +475,15 @@ input[type="radio"], input[type="checkbox"] {
 .txt-date-2 {
     font-size: 25px;
 }
+}
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1400px) {
 .bus-background{
-        height: 360px!important;
+        height: 360px;
     }
-/* .bus img{
-    width: 590px!important;
-} */
 	
 .bus {
-margin-top:170px!important;
+margin-top:170px;
 	}
 }
 
@@ -493,3 +491,4 @@ margin-top:170px!important;
     .checkbox-header {
         margin-top: 25px;
     }
+}
