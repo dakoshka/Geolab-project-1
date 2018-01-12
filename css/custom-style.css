@@ -504,20 +504,32 @@ margin-top:170px;
     }
 
     .burger-img {
-        width: 65%;
-    }
-
-    .overlay a{
-        font-size: 25px;
+        width: 70%;
     }
 
     .overlay-content{
-        top: 15%;
+        top: 12%;
+    }
+
+    #burgerIcon{
+        right: -25px;
+    }
+
+    .button-left, .button-right{
+        padding: 35% 1%;
     }
 }
 
 @media screen and (max-width: 470px) {
     .contact-header {
         font-size: 25px;
+    }
+
+      .overlay a{
+        font-size: 30px;
+    }
+
+     .services-header {
+        font-size: 23px;
     }
 }
