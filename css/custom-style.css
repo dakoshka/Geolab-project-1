@@ -116,7 +116,6 @@ width: 80%;
 
 .overlay-content {
     font-family: RobotoCondensed-Regular, sans-serif;
-    font-size: 15px;
     position: relative;
     top: 25%;
     width: 100%;
@@ -502,6 +501,18 @@ margin-top:170px;
 
     .services-header {
         font-size: 30px;
+    }
+
+    .burger-img {
+        width: 65%;
+    }
+
+    .overlay a{
+        font-size: 25px;
+    }
+
+    .overlay-content{
+        top: 15%;
     }
 }
 
