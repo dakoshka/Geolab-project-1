@@ -150,6 +150,10 @@ width: 80%;
 }
 
 
+.car-img{
+    width: 100%;
+}
+
 .date {
     position: absolute;
     right: 3%;
